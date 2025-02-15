@@ -6,10 +6,10 @@ import MenuIcon from "../icons/MenuIcon.astro";
 ---
 
 <section class="w-screen h-screen overflow-hidden relative flex flex-col">
-    <header class="w-full justify-between flex z-10 top-0 items-center px-15">
+    <header class="w-full justify-between flex z-10 top-0 items-center px-5 xl:px-15">
         <MenuIcon size="size-10"/>
         <img src="/Arcane League of Legends.svg" alt="Arcane League of Legends" class="size-30"/>
-        <button class="px-10 py-3 border border-lime-400/50 hover:bg-lime-400 hover:text-black font-semibold duration-300 hover:scale-105">
+        <button class="px-5 py-2 xl:px-10 xl:py-3 border border-lime-400/50 hover:bg-[#b9fc04] hover:text-black font-semibold duration-300 hover:scale-105 text-xs xl:text-base">
             CONTACT
         </button>
     </header>
@@ -19,17 +19,22 @@ import MenuIcon from "../icons/MenuIcon.astro";
         <XIcon />
         <InstagramIcon />
     </div>
-    <div class="w-full h-full relative flex flex-col justify-center px-55">
-        <h4 class="uppercase px-5 mb-8 tracking-[0.1em] text-sm"><span class="opacity-60">League of Legends</span> <span class="font-bold">Prod</span></h4>
-        <h1 class="ValorantFont text-[250px] h-[250px] flex items-center">arce</h1>
-        <h2 class="uppercase px-5 mb-2 tracking-[0.2em] font-semibold text-xl text-lime-400">" There is a monster "</h2>
-        <h3 class="uppercase px-5 mb-8 tracking-[0.2em] text-sm"><span class="opacity-60">Inside all of</span> <span class="font-bold">us</span></h3>
-        <button class="uppercase mx-5 inline-flex self-start border border-lime-400/50 hover:bg-lime-400 hover:text-black font-semibold duration-300 hover:scale-105 px-14 py-4 text-sm">Discover</button>
-        <img src="/JinxName.png" alt="JinxName" class="absolute w-3xl z-5 right-40 top-0 -translate-y-35 drop-shadow-[0px_0px_40px_rgba(163,230,53,0.7)]"/>
-        <img src="/Jinx.png" alt="Jinx" class="absolute w-[950px] z-5 right-80 bottom-0 drop-shadow-[0px_0px_150px_rgba(163,230,53,0.4)]"/>
+    <div class="w-full h-full relative flex flex-col justify-center xl:px-20 2xl:px-55">
+        <div class="scale-40 -translate-x-30 -translate-y-60 xl:translate-0 xl:scale-100">
+            <h4 class="uppercase px-5 mb-8 tracking-[0.1em] text-sm"><span class="opacity-60">League of Legends</span> <span class="font-bold">Prod</span></h4>
+            <h1 class="ValorantFont text-[250px] h-[250px] flex items-center">arce</h1>
+            <h2 class="uppercase px-5 mb-2 tracking-[0.2em] font-semibold text-xl text-[#b9fc04]">" There is a monster "</h2>
+            <h3 class="uppercase px-5 mb-8 tracking-[0.2em] text-sm"><span class="opacity-60">Inside all of</span> <span class="font-bold">us</span></h3>
+            <button class="uppercase mx-5 inline-flex self-start border border-lime-400/50 hover:bg-[#b9fc04] hover:text-black font-semibold duration-300 hover:scale-105 px-14 py-4 text-sm">Discover</button>
+        </div>
+        
+        <div class="absolute flex flex-col -translate-x-40 xl:translate-0 bottom-0 xl:right-50 2xl:right-80 justify-center scale-140 xl:scale-100">
+            <img src="/JinxName.png" alt="JinxName" class="absolute -right-10 xl:-right-10 2xl:-right-40 -top-15 xl:-top-25 2xl:-top-45 w-64 xl:w-md 2xl:w-3xl z-4 drop-shadow-[0px_0px_40px_rgba(163,230,53,0.7)]"/>
+            <img src="/Jinx.png" alt="Jinx" class="xl:w-[700px] 2xl:w-[950px] z-5 drop-shadow-[0px_0px_150px_rgba(163,230,53,0.4)]"/>
+        </div>
     </div>
-    <footer class="p-5 absolute bottom-0 w-full flex justify-between z-999">
-        <a href="https://github.com/ChrisTincoDev" target="_blank" rel="noopener noreferrer" class="text-[10px] bg-black p-1 rounded-md hover:scale-110 duration-300 flex">Created by ChrisTincoDev</a>
-        <p class="text-xs uppercase font-normal tracking-[0.1em]">2025 All right reserved for <span class="font-bold">Arcane</span> productions limited</p>
+    <footer class="p-5 absolute bottom-0 w-full flex flex-col items-center gap-3 xl:flex-row xl:justify-between z-999">
+        <a href="https://github.com/ChrisTincoDev" target="_blank" rel="noopener noreferrer" class="text-[10px] bg-black p-1 rounded-md hover:scale-110 duration-300">Created by ChrisTincoDev</a>
+        <p class="text-xs uppercase font-normal tracking-[0.1em] text-center">2025 All right reserved for <span class="font-bold">Arcane</span> productions limited</p>
     </footer>
 </section>
