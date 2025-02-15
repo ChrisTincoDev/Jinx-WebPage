@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.ValorantFont {
+    font-family: "ValorantFont", sans-serif;
+}
+.text-outline {
+    -webkit-text-stroke: 1px white;
+    color: transparent; /* O transparente para solo el borde */
+  }
